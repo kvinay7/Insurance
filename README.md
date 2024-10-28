@@ -1,63 +1,119 @@
 # Insurance Application
 
-Here’s a detailed breakdown of the functional and non-functional requirements for an insurance application.
+Here’s a detailed breakdown of the requirements and design for an insurance application, including classes, interfaces, and enumerations:
 
-### Functional Requirements
+### Requirements
+1. **User Management**:
+   - Users should be able to create accounts with personal details.
+   - Users should be able to log in, view, and update their profile information.
+   - Users must be able to reset forgotten passwords.
 
-#### 1. User Management
-- **Registration**: Users must be able to create an account with personal details (name, email, password).
-- **Login**: Users should be able to log in using their email and password.
-- **Profile Management**: Users must be able to view and update their profile information.
-- **Password Management**: Users should be able to reset their password if forgotten.
+2. **Policy Management**:
+   - Users must be able to view their existing insurance policies.
+   - Users should be able to apply for new policies and modify existing ones.
+   - Users should be able to renew policies that are about to expire.
 
-#### 2. Policy Management
-- **View Policies**: Users must be able to view their existing insurance policies.
-- **Create Policy**: Users should be able to apply for new insurance policies by providing necessary details.
-- **Modify Policy**: Users must be able to update details of their existing policies (e.g., coverage amount, type).
-- **Renew Policy**: Users should be able to renew policies that are about to expire.
+3. **Claims Management**:
+   - Users should be able to submit claims for their policies and view claim status.
+   - Users must be able to update claims and provide additional documentation.
+   - Admins should be able to approve or deny claims.
 
-#### 3. Claims Management
-- **Submit Claim**: Users must be able to submit claims for their policies, providing necessary documentation.
-- **View Claims**: Users should be able to view the status and details of their submitted claims.
-- **Update Claim**: Users must be able to update details of their claims or provide additional documentation.
-- **Claim Approval/Denial**: The system should allow admins to review and approve or deny claims.
+4. **Payment Processing**:
+   - Users must be able to pay premiums using various methods.
+   - Users should be able to view their payment history.
+   - The system must allow users to request refunds for overpayments or canceled policies.
 
-#### 4. Payment Processing
-- **Make Payment**: Users must be able to pay premiums through various methods (credit card, bank transfer).
-- **View Payment History**: Users should be able to view their payment history.
-- **Refunds**: The system must allow users to request refunds for overpayments or canceled policies.
+5. **Notifications**:
+   - Users should receive alerts for important events (e.g., policy renewals, claim updates).
+   - The system should send email confirmations for significant actions.
 
-#### 5. Notifications
-- **Alerts**: Users should receive notifications for important events (e.g., policy renewals, claim updates).
-- **Email Notifications**: The system should send email confirmations for actions like registration, payments, and claim submissions.
+6. **Admin Management** (Optional):
+   - Admins should be able to view and manage user accounts, policies, and claims.
 
-#### 6. Admin Management (Optional)
-- **User Management**: Admins should be able to view and manage user accounts.
-- **Policy Overview**: Admins must have access to all policies and be able to modify them.
-- **Claim Review**: Admins should be able to review and manage claims submitted by users.
+### Classes, Interfaces, and Enumerations
 
-### Non-Functional Requirements
+#### Classes
+1. **User**
+   - **Properties**:
+     - `userId`: Unique identifier for the user.
+     - `name`: Full name of the user.
+     - `email`: User's email address.
+     - `password`: User's password (hashed for security).
+     - `profileInfo`: Additional profile details (address, phone number, etc.).
+   - **Methods**:
+     - `register()`: Creates a new user account.
+     - `login()`: Authenticates the user.
+     - `updateProfile()`: Updates user profile information.
+     - `resetPassword()`: Initiates the password reset process.
 
-#### 1. Performance
-- **Response Time**: The system should respond to user requests within 2 seconds under normal load.
-- **Scalability**: The application should be able to handle an increasing number of users and data without significant performance degradation.
+2. **Policy**
+   - **Properties**:
+     - `policyId`: Unique identifier for the policy.
+     - `userId`: Associated user's ID.
+     - `policyType`: Type of insurance (e.g., health, auto, life).
+     - `coverageAmount`: Amount covered by the policy.
+     - `startDate`: Start date of the policy.
+     - `endDate`: Expiration date of the policy.
+     - `premiumAmount`: Cost of the policy premium.
+     - `status`: Current status of the policy (active, expired).
+   - **Methods**:
+     - `modifyPolicy()`: Updates policy details.
+     - `renewPolicy()`: Renews the policy.
 
-#### 2. Security
-- **Data Protection**: User data must be encrypted both in transit (e.g., HTTPS) and at rest.
-- **Authentication**: Implement strong password policies and multi-factor authentication for users.
-- **Authorization**: Ensure users can only access data and functions they are permitted to.
+3. **Claim**
+   - **Properties**:
+     - `claimId`: Unique identifier for the claim.
+     - `policyId`: Linked policy's ID.
+     - `userId`: Associated user's ID.
+     - `amountClaimed`: Amount being claimed.
+     - `status`: Current status of the claim (submitted, under review, approved, denied).
+     - `submissionDate`: Date the claim was submitted.
+     - `documentation`: Files or documentation related to the claim.
+   - **Methods**:
+     - `submitClaim()`: Submits a new claim.
+     - `updateClaim()`: Updates claim details.
 
-#### 3. Usability
-- **User Interface**: The application should have a clean, intuitive interface that is easy to navigate.
-- **Accessibility**: The system should be usable by people with disabilities (e.g., screen reader compatibility).
+4. **Payment**
+   - **Properties**:
+     - `paymentId`: Unique identifier for the payment transaction.
+     - `userId`: Associated user's ID.
+     - `policyId`: Linked policy's ID.
+     - `amount`: Amount paid.
+     - `paymentDate`: Date of the payment.
+     - `paymentMethod`: Method used for payment (credit card, bank transfer).
+     - `status`: Status of the payment (completed, pending, failed).
+   - **Methods**:
+     - `makePayment()`: Processes a payment.
+     - `requestRefund()`: Requests a refund for a payment.
 
-#### 4. Reliability
-- **Availability**: The application should be available 99.9% of the time, excluding scheduled maintenance.
-- **Backup and Recovery**: Regular backups should be made, and recovery processes should be in place to prevent data loss.
+5. **Notification**
+   - **Properties**:
+     - `notificationId`: Unique identifier for the notification.
+     - `userId`: Associated user's ID.
+     - `message`: Content of the notification.
+     - `dateSent`: Date and time the notification was sent.
+   - **Methods**:
+     - `sendNotification()`: Sends a notification to the user.
 
-#### 5. Compliance
-- **Regulatory Compliance**: The application must adhere to relevant regulations (e.g., GDPR, HIPAA) regarding data privacy and protection.
-- **Audit Logs**: Maintain logs of user actions and system changes for auditing purposes.
+6. **Admin**
+   - **Properties**:
+     - `adminId`: Unique identifier for the admin.
+     - `name`: Name of the admin.
+     - `email`: Email address of the admin.
+   - **Methods**:
+     - `manageUsers()`: Manages user accounts.
+     - `reviewClaims()`: Reviews claims submitted by users.
+     - `managePolicies()`: Modifies policies as needed.
+
+7. **InsufficientFundsException (Custom Exception)**
+   - Exception thrown when a user tries to make a payment without sufficient funds.
+
+8. **InsufficientStockException (Custom Exception)**
+   - Exception thrown when a user tries to claim an amount exceeding their coverage.
+
+9. **InsuranceApplication**
+   - **Methods**:
+     - `main()`: Entry point of the application, demonstrating the usage of the insurance application.
 
 ### Summary
-These requirements provide a comprehensive foundation for developing an insurance application, covering essential functionalities and important non-functional aspects such as performance, security, and usability. Gathering input from stakeholders during this phase can further refine and validate these requirements, ensuring that the final application meets user needs effectively.
+This design outlines a robust structure for the insurance application, ensuring that all functional requirements are addressed. Each class encapsulates specific responsibilities, promoting a clean architecture. Custom exceptions facilitate error handling, while the separation of user, policy, claim, payment, and admin functionalities provides clarity and maintainability in the application.
