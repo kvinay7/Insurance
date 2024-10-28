@@ -1,4 +1,4 @@
-# Insurance
+# Insurance Application
 
 Here’s a detailed breakdown of the functional and non-functional requirements for an insurance application.
 
