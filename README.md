@@ -15,7 +15,7 @@ Here’s a detailed breakdown of the requirements and design for an insurance ap
 
 3. **Claims Management**:
    - Users should be able to submit claims for their policies and view claim status.
-   - Users must be able to update claims and provide additional documentation.
+   - Users must be able to update claims.
    - Admins should be able to approve or deny claims.
 
 4. **Payment Processing**:
@@ -37,7 +37,6 @@ Here’s a detailed breakdown of the requirements and design for an insurance ap
      - `name`: Full name of the user.
      - `email`: User's email address.
      - `password`: User's password (hashed for security).
-     - `profileInfo`: Additional profile details (address, phone number, etc.).
    - **Methods**:
      - `register()`: Creates a new user account.
      - `login()`: Authenticates the user.
@@ -66,7 +65,6 @@ Here’s a detailed breakdown of the requirements and design for an insurance ap
      - `amountClaimed`: Amount being claimed.
      - `status`: Current status of the claim (submitted, under review, approved, denied).
      - `submissionDate`: Date the claim was submitted.
-     - `documentation`: Files or documentation related to the claim.
    - **Methods**:
      - `submitClaim()`: Submits a new claim.
      - `updateClaim()`: Updates claim details.
