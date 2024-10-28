@@ -1,6 +1,6 @@
 # Insurance Application
 
-Here’s a detailed breakdown of the requirements and design for an insurance application, including classes, interfaces, and enumerations:
+Here’s a detailed breakdown of the requirements and design for an insurance application:
 
 ### Requirements
 1. **User Management**:
@@ -27,10 +27,8 @@ Here’s a detailed breakdown of the requirements and design for an insurance ap
    - Users should receive alerts for important events (e.g., policy renewals, claim updates).
    - The system should send email confirmations for significant actions.
 
-6. **Admin Management** (Optional):
+6. **Admin Management**:
    - Admins should be able to view and manage user accounts, policies, and claims.
-
-### Classes, Interfaces, and Enumerations
 
 #### Classes
 1. **User**
@@ -105,15 +103,8 @@ Here’s a detailed breakdown of the requirements and design for an insurance ap
      - `reviewClaims()`: Reviews claims submitted by users.
      - `managePolicies()`: Modifies policies as needed.
 
-7. **InsufficientFundsException (Custom Exception)**
-   - Exception thrown when a user tries to make a payment without sufficient funds.
-
-8. **InsufficientStockException (Custom Exception)**
+7. **InsufficientStockException (Custom Exception)**
    - Exception thrown when a user tries to claim an amount exceeding their coverage.
 
-9. **InsuranceApplication**
-   - **Methods**:
-     - `main()`: Entry point of the application, demonstrating the usage of the insurance application.
-
-### Summary
-This design outlines a robust structure for the insurance application, ensuring that all functional requirements are addressed. Each class encapsulates specific responsibilities, promoting a clean architecture. Custom exceptions facilitate error handling, while the separation of user, policy, claim, payment, and admin functionalities provides clarity and maintainability in the application.
+8. **InsuranceApplication**
+   - `main()`: Entry point of the application, demonstrating the usage of the insurance application.
