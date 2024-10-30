@@ -46,5 +46,5 @@ Here’s the functional requirements and design for an insurance application:
     - Users receive notifications for important updates (policy renewals, claim status).
 
 
-#### Classes
+### Classes
 
