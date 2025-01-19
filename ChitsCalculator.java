@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.*;
 
-public class Chits{
+public class ChitsCalculator{
 	public static void main(String[] args) {
 	    double amount = 120000;
 	    int months = 12;
