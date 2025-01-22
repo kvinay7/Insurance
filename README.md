@@ -86,20 +86,11 @@ Here’s the functional requirements and design for an insurance application:
    
    - Example: A `Library` class might have a one-to-many relationship with a `Book` class (one library has many books).
 
-### 6. **Define Visibility and Access Modifiers**
-   - Specify whether attributes and methods are `public`, `private`, or `protected`, to control access to data.
-
-   - Example:
-     - `+` (public)
-     - `-` (private)
-     - `#` (protected)
-
-### 7. **Refine the Design**
+### 6. **Refine the Design**
    - Refine your class diagram by reviewing the relationships, attributes, and methods to ensure they correctly represent the system's design. Make sure you have not overlooked any important relationships or data points.
-   
    - Apply principles like **normalization**, **encapsulation**, **modularity**, and **cohesion** to ensure your diagram is effective and maintainable.
 
-### 8. **Draw the Class Diagram**
+### 7. **Draw the Class Diagram**
    - Now, start creating the actual diagram using UML (Unified Modeling Language) notation:
      - **Class boxes**: Represent each class with a rectangle divided into three sections (name, attributes, and methods).
      - **Lines for relationships**: Draw lines to represent associations, inheritance, and other relationships.
