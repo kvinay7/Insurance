@@ -59,13 +59,13 @@ Here’s the functional requirements and design for an insurance application:
 ### 3. **Define Attributes**
    - Identify the properties or attributes that each class should have. These represent the data that each object will hold.
    - Example:
-      - For User class - `userID`, `name`, `email`, `password`, `phone number`, `address`, `dateOfBirth`.
-      - For Policy class - `policyID`, `policyName`, `description`, `coverageAmount`, `premiumAmount`, `policyType`, `startDate`, `endDate`.
-      - For Application class - `applicationID`, `applicationType`, `applicationDate`, `applicationStatus`.
-      - For Payment class - `paymentID`, `paymentAmount`, `paymentDate`, `paymentMethod`, `paymentStatus`.
-      - For PaymentHistory class - `paymentHistoryID`, `paymentDate`, `paymentAmount`, `paymentMethod`.
-      - For Claim class -  `claimID`, `claimDate`, `claimAmount`, `claimStatus`, `claimDetails`.
-      - For Notificatin class - `notificationID`, `notificationType`, `message`, `dateSent`.
+      - User class - `userID`, `name`, `email`, `password`, `phone number`, `address`, `dateOfBirth`.
+      - Policy class - `policyID`, `policyName`, `description`, `coverageAmount`, `premiumAmount`, `policyType`, `startDate`, `endDate`.
+      - Application class - `applicationID`, `applicationType`, `applicationDate`, `applicationStatus`.
+      - Payment class - `paymentID`, `paymentAmount`, `paymentDate`, `paymentMethod`, `paymentStatus`.
+      - PaymentHistory class - `paymentHistoryID`, `paymentDate`, `paymentAmount`, `paymentMethod`.
+      - Claim class -  `claimID`, `claimDate`, `claimAmount`, `claimStatus`, `claimDetails`.
+      - Notificatin class - `notificationID`, `notificationType`, `message`, `dateSent`.
 
 ### 4. **Define Methods (Operations)**
    - Determine the behavior of each class by identifying the methods or functions each class will have. These operations define the actions that can be performed on instances of the class.
