@@ -54,16 +54,28 @@ Here’s the functional requirements and design for an insurance application:
 ### 2. **Identify Key Classes**
    - Identify the main objects or entities that need to be represented in the system. These might include real-world objects or concepts that the software needs to model.
 
-   - Example: In a library system, classes could include `Book`, `Member`, `Librarian`, etc.
+   - Example: In Insurance Application, classes could include `User`, `Policy`, `Application`, `Payment`, `PaymentHistory`, `Claim`, `Notification`, etc.
 
 ### 3. **Define Attributes**
    - Identify the properties or attributes that each class should have. These represent the data that each object will hold.
-   - Example: For a `Book` class, attributes could include `title`, `author`, `isbn`, and `publicationYear`.
+   - Example:
+      - For `User` class: `userID`, `name`, `email`, `password`, `phone number`, `address`, `dateOfBirth`.
+      - For `Policy` class: `policyID`, `policyName`, `description`, `coverageAmount`, `premiumAmount`, `policyType`, `startDate`, `endDate`.
+      - For `Application` class: `applicationID`, `applicationType`, `applicationDate`, `applicationStatus`.
+      - For `Payment` class: `paymentID`, `paymentAmount`, `paymentDate`, `paymentMethod`, `paymentStatus`.
+      - For `PaymentHistory` class: `paymentHistoryID`, `paymentDate`, `paymentAmount`, `paymentMethod`.
+      - For `Claim` class:  `claimID`, `claimDate`, `claimAmount`, `claimStatus`, `claimDetails`.
+      - For `Notificatin` class: `notificationID`, `notificationType`, `message`, `dateSent`.
 
 ### 4. **Define Methods (Operations)**
    - Determine the behavior of each class by identifying the methods or functions each class will have. These operations define the actions that can be performed on instances of the class.
 
-   - Example: For a `Book` class, methods might include `checkOut()`, `returnBook()`, `getDetails()`, etc.
+   - Example:
+      - For `User` class: `register()`, `logIn()`, `updateProfile()`, `receiveNotification()`.
+      - For `Policy` class: `viewDetails()`, `applyForPolicy()`, `renewPolicy()`, `cancelPolicy()`.
+      - For `Application` class: `submitApplication()`, `trackApplicationStatus()`.
+      - For `Payment` class: `makePayment()`, `viewPaymentHistory()`.
+      - For `Claim` class: `submitClaim()`, `trackClaimStatus()`, `viewClaimHistory()`.
 
 ### 5. **Define Relationships Between Classes**
    - Identify how the classes interact with each other. This includes:
