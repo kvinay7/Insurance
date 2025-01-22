@@ -105,6 +105,3 @@ Here’s the functional requirements and design for an insurance application:
      - **Lines for relationships**: Draw lines to represent associations, inheritance, and other relationships.
      - **Arrows for directionality**: Use arrows to indicate the direction of associations or dependencies.
      - **Multiplicity**: Indicate the number of instances related (e.g., one-to-many, many-to-many) next to association lines.
-
-### 9. **Review and Iterate**
-   - After creating the diagram, review it for clarity, completeness, and correctness. Make sure it reflects all of the relationships, attributes, and methods needed for the system. Iterate on the diagram if needed.
