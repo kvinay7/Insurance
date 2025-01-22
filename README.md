@@ -67,7 +67,7 @@ Here’s the functional requirements and design for an insurance application:
       - Claim class -  `claimID`, `claimDate`, `claimAmount`, `claimStatus`, `claimDetails`.
       - Notificatin class - `notificationID`, `notificationType`, `message`, `dateSent`.
 
-### 4. **Define Methods (Operations)**
+### 4. **Define Methods**
    - Determine the behavior of each class by identifying the methods or functions each class will have. These operations define the actions that can be performed on instances of the class.
 
    - Example:
@@ -94,10 +94,10 @@ Here’s the functional requirements and design for an insurance application:
      - `-` (private)
      - `#` (protected)
 
-### 7. **Refine the Design (Normalization)**
+### 7. **Refine the Design**
    - Refine your class diagram by reviewing the relationships, attributes, and methods to ensure they correctly represent the system's design. Make sure you have not overlooked any important relationships or data points.
    
-   - Apply principles like **encapsulation**, **modularity**, and **cohesion** to ensure your diagram is effective and maintainable.
+   - Apply principles like **normalization**, **encapsulation**, **modularity**, and **cohesion** to ensure your diagram is effective and maintainable.
 
 ### 8. **Draw the Class Diagram**
    - Now, start creating the actual diagram using UML (Unified Modeling Language) notation:
