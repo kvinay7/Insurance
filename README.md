@@ -45,7 +45,6 @@ Here’s the functional requirements and design for an insurance application:
 14. **Notifications**
     - Users receive notifications for important updates (policy renewals, claim status).
 ## [Use-case Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
----
 
 ## [Design Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
 
