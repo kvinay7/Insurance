@@ -1,6 +1,6 @@
 # Insurance Application
 
-### Functional Requirements
+## Functional Requirements
 1. **User Registration**
    - Users can create an account by providing personal information.
    
