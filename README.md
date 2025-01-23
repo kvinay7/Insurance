@@ -46,7 +46,9 @@ Here’s the functional requirements and design for an insurance application:
     - Users receive notifications for important updates (policy renewals, claim status).
 ---
 
-## [Designing class diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
+## [Design](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
+
+### 0. [Use-case Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
 
 ### 1. **Understand the Purpose of the Class Diagram**
    - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of your design.
@@ -96,3 +98,6 @@ Here’s the functional requirements and design for an insurance application:
      - **Lines for relationships**: Draw lines to represent associations, inheritance, and other relationships.
      - **Arrows for directionality**: Use arrows to indicate the direction of associations or dependencies.
      - **Multiplicity**: Indicate the number of instances related (e.g., one-to-many, many-to-many) next to association lines.
+---
+
+## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
