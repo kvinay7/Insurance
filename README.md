@@ -1,7 +1,5 @@
 # Insurance Application
 
-Here’s the functional requirements and design for an insurance application:
-
 ### Functional Requirements
 1. **User Registration**
    - Users can create an account by providing personal information.
