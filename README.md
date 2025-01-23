@@ -1,6 +1,7 @@
-# Insurance Application
+# Software Design and Development in Java
+Software development is the process of designing, building, and maintaining software applications for various platforms such as web, mobile, desktop, and embedded systems. It encompasses a wide range of tasks including planning, requirement gathering, architecture design, coding, testing, deployment, and maintenance.
 
-## Functional Requirements
+## Functional Requirements of Insurance Application
 1. **User Registration**
    - Users can create an account by providing personal information.
    
@@ -97,3 +98,4 @@
 ---
 
 ## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
+## [Spring Framework](https://github.com/kvinay7/interview-preparation/edit/main/DEV.md)
