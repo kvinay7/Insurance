@@ -46,7 +46,7 @@ Here’s the functional requirements and design for an insurance application:
     - Users receive notifications for important updates (policy renewals, claim status).
 ---
 
-## Designing class diagram
+## [Designing class diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
 
 ### 1. **Understand the Purpose of the Class Diagram**
    - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of your design.
