@@ -91,7 +91,6 @@ Software development is the process of designing, building, and maintaining soft
       - **Encapsulation**: Protects data and ensures controlled access.
       - **Abstraction**: Simplifies the system by hiding unnecessary details.
       - **Composition Over Inheritance**: Increases flexibility and modularity.
-      - **Modularity**: Breaks down complex systems into manageable components.
       - **Cohesion (Single Responsibility)**: Ensures that classes are focused and have a clear purpose.
       - **Open/Closed**: Enables easy extension without modifying existing code.
       - **Liskov Substitution Principle**: ensures that subclasses are extensions of their parent classes.
