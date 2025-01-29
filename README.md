@@ -87,6 +87,7 @@ Software development is the process of designing, building, and maintaining soft
 
 ### 6. **Refine the Design**
    - To refine the class diagram, we need to ensure that it accurately reflects the real-world entities, attributes, their relationships, and their responsibilities in a manner that adheres to principles such as:
+      
       - **Encapsulation**: Protects data and ensures controlled access.
       - **Abstraction**: Simplifies the system by hiding unnecessary details.
       - **Composition Over Inheritance**: Increases flexibility and modularity.
