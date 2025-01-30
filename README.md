@@ -83,8 +83,15 @@ Software development is the process of designing, building, and maintaining soft
      - **Dependency**: One class depends on another for its functionality.
      - **Realization**: one class implements the behavior of the other class or interface.
    - Example: A `Library` class might have a one-to-many relationship with a `Book` class (one library has many books).
+   
+### 6. **Draw the Class Diagram**
+   - Now, start creating the actual diagram using UML (Unified Modeling Language) notation:
+     - **Class boxes**: Represent each class with a rectangle divided into three sections (name, attributes, and methods).
+     - **Lines for relationships**: Draw lines to represent associations, inheritance, and other relationships.
+     - **Arrows for directionality**: Use arrows to indicate the direction of associations or dependencies.
+     - **Multiplicity**: Indicate the number of instances related (e.g., one-to-many, many-to-many) next to association lines.
 
-### 6. **Refine the Design**
+### 7. **Refine the Design**
    - To refine the class diagram, we need to ensure that it accurately reflects the real-world entities, attributes, their relationships, and their responsibilities in a manner that adheres to principles such as:
       - **Encapsulation**: Protects data and ensures controlled access.
       - **Abstraction**: Simplifies the system by hiding unnecessary details.
@@ -96,13 +103,6 @@ Software development is the process of designing, building, and maintaining soft
       - **Dependency Inversion**: Makes systems more flexible and maintainable.
       - **Normalization (DRY Principle)**: Ensures data consistency and reduces redundancy.
       - **MVC (Model-View-Controller)**: Separates business logic from UI and user input.
-   
-### 7. **Draw the Class Diagram**
-   - Now, start creating the actual diagram using UML (Unified Modeling Language) notation:
-     - **Class boxes**: Represent each class with a rectangle divided into three sections (name, attributes, and methods).
-     - **Lines for relationships**: Draw lines to represent associations, inheritance, and other relationships.
-     - **Arrows for directionality**: Use arrows to indicate the direction of associations or dependencies.
-     - **Multiplicity**: Indicate the number of instances related (e.g., one-to-many, many-to-many) next to association lines.
 ---
 
 ## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
