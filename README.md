@@ -43,7 +43,7 @@ Software development is the process of designing, building, and maintaining soft
 
 14. **Notifications**
     - Users receive notifications for important updates (policy renewals, claim status).
-## [Use-case Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
+## [System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
 
 ## [Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
 
