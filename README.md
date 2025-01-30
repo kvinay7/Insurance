@@ -43,16 +43,16 @@ Software development is the process of designing, building, and maintaining soft
 
 14. **Notifications**
     - Users receive notifications for important updates (policy renewals, claim status).
+      
 ## [System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
 
 ## [Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
 
 ### 1. **Understand the Purpose of the Application**
-   - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of your design. Analyze user needs and system constraints. Understand expected system interactions and workflows.
+   - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows.
 
 ### 2. **Identify Key Classes**
    - Identify the main objects or entities that need to be represented in the system. These might include real-world objects or concepts that the software needs to model.
-
    - Example: In Insurance Application, classes could include `User`, `Policy`, `Application`, `Payment`, `PaymentHistory`, `Claim`, `Notification`, etc.
 
 ### 3. **Define Attributes**
@@ -68,7 +68,6 @@ Software development is the process of designing, building, and maintaining soft
 
 ### 4. **Define Methods**
    - Determine the behavior of each class by identifying the methods or functions each class will have. These operations define the actions that can be performed on instances of the class.
-
    - Example:
       - User class - `register()`, `logIn()`, `updateProfile()`, `receiveNotification()`.
       - Policy class - `viewDetails()`, `applyForPolicy()`, `renewPolicy()`, `cancelPolicy()`.
@@ -83,12 +82,10 @@ Software development is the process of designing, building, and maintaining soft
      - **Aggregation/Composition**: One class is made up of other classes.
      - **Dependency**: One class depends on another for its functionality.
      - **Realization**: one class implements the behavior of the other class or interface.
-   
    - Example: A `Library` class might have a one-to-many relationship with a `Book` class (one library has many books).
 
 ### 6. **Refine the Design**
    - To refine the class diagram, we need to ensure that it accurately reflects the real-world entities, attributes, their relationships, and their responsibilities in a manner that adheres to principles such as:
-      
       - **Encapsulation**: Protects data and ensures controlled access.
       - **Abstraction**: Simplifies the system by hiding unnecessary details.
       - **Composition Over Inheritance**: Increases flexibility and modularity.
