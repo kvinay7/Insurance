@@ -47,8 +47,8 @@ Software development is the process of designing, building, and maintaining soft
 
 ## [Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
 
-### 1. **Understand the Purpose of the Class Diagram**
-   - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of your design.
+### 1. **Understand the Purpose of the Application**
+   - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of your design. Analyze user needs and system constraints. Understand expected system interactions and workflows.
 
 ### 2. **Identify Key Classes**
    - Identify the main objects or entities that need to be represented in the system. These might include real-world objects or concepts that the software needs to model.
@@ -79,9 +79,10 @@ Software development is the process of designing, building, and maintaining soft
 ### 5. **Define Relationships Between Classes**
    - Identify how the classes interact with each other. This includes:
      - **Associations**: Classes are related to one another in some way.
-     - **Inheritance**: One class inherits properties and behaviors from another.
+     - **Generalization**: One class inherits properties and behaviors from another.
      - **Aggregation/Composition**: One class is made up of other classes.
      - **Dependency**: One class depends on another for its functionality.
+     - **Realization**: one class implements the behavior of the other class or interface.
    
    - Example: A `Library` class might have a one-to-many relationship with a `Book` class (one library has many books).
 
@@ -96,7 +97,8 @@ Software development is the process of designing, building, and maintaining soft
       - **Liskov Substitution Principle**: ensures that subclasses are extensions of their parent classes.
       - **Interface Segregation**: Promotes specialized interfaces, improving usability.
       - **Dependency Inversion**: Makes systems more flexible and maintainable.
-      - **Normalization**: Ensures data consistency and reduces redundancy (DRY).
+      - **Normalization (DRY Principle)**: Ensures data consistency and reduces redundancy.
+      - **MVC (Model-View-Controller)**: Separates business logic from UI and user input.
    
 ### 7. **Draw the Class Diagram**
    - Now, start creating the actual diagram using UML (Unified Modeling Language) notation:
