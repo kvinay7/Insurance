@@ -83,6 +83,7 @@ Software development is the process of designing, building, and maintaining soft
      - **Realization**: one class implements the behavior of the other class or interface.
      - **Aggregation/Composition**: One class is made up of other classes.
      - **Dependency**: One class depends on another for its functionality.
+  
    - Example:
       - A User can have many Policies, Applications, Payments and Claims.
       - Policies generate Applications, require Payments, and cover Claims.
