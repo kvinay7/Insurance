@@ -50,7 +50,7 @@ Software development is the process of designing, building, and maintaining soft
 ## [System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
 
 <details>
-  <summary><h2>[Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)</h2></summary>
+  <summary><h2>Designing Class Diagram</h2></summary>
 
 ### 1. **Understand the Purpose of the Application**
    - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows.
