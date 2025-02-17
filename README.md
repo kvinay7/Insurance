@@ -1,7 +1,9 @@
 # Software Design and Development in Java
 Software development is the process of designing, building, and maintaining software applications for various platforms such as web, mobile, desktop, and embedded systems. It encompasses a wide range of tasks including planning, requirement gathering, architecture design, coding, testing, deployment, and maintenance.
 
-## Functional Requirements of Insurance Application
+<details>
+  <summary><h2>Functional Requirements of Insurance Application</h2></summary>
+   
 1. **User Registration**
    - Users can create an account by providing personal information.
    
@@ -43,7 +45,8 @@ Software development is the process of designing, building, and maintaining soft
 
 14. **Notifications**
     - Users receive notifications for important updates (policy renewals, claim status).
-      
+</details>
+
 ## [System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
 
 ## [Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
