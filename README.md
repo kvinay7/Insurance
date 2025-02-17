@@ -116,3 +116,107 @@ Software development is the process of designing, building, and maintaining soft
 ## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
 ## [Spring Framework](https://github.com/kvinay7/interview-preparation/blob/main/Spring.md)
 </details>
+<details>
+  <summary><h1>Design Patterns</h1></summary>
+<details>
+  <summary><h2>1. Singleton Design Pattern</h2></summary>
+   It is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. This pattern is typically used when exactly one object is needed to coordinate actions across the system, such as in database connections, logging, or configuration management.
+
+### 1. **Eager Initialization** (Thread-safe but not lazy-loaded)
+This method creates the singleton instance as soon as the class is loaded, ensuring thread-safety.
+
+```java
+public class Singleton {
+    // Instance is created at the time of class loading
+    private static final Singleton INSTANCE = new Singleton();
+
+    // Private constructor to prevent instantiation
+    private Singleton() {}
+
+    // Public method to get the instance
+    public static Singleton getInstance() {
+        return INSTANCE;
+    }
+}
+```
+
+### 2. **Lazy Initialization** (Not thread-safe)
+In this method, the instance is created only when it is first needed. However, it is not thread-safe by default.
+
+```java
+public class Singleton {
+    private static Singleton instance;
+
+    // Private constructor to prevent instantiation
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+```
+
+### 3. **Thread-Safe Singleton (Using Synchronization)**
+To make the lazy initialization method thread-safe, we synchronize the `getInstance()` method.
+
+```java
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {}
+
+    // Synchronized method to ensure thread-safety
+    public static synchronized Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+```
+
+### 4. **Double-Checked Locking Singleton**
+This method reduces the overhead of synchronization by checking the instance twice: once without synchronization, and again inside a synchronized block.
+
+```java
+public class Singleton {
+    private static volatile Singleton instance;
+
+    private Singleton() {}
+
+    // Double-checked locking for efficiency
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
+    }
+}
+```
+
+### 5. **Bill Pugh Singleton Design (Initialization-on-demand holder idiom)**
+This is the most efficient and thread-safe method. It leverages the Java ClassLoader mechanism for lazy loading and thread-safety.
+
+```java
+public class Singleton {
+    private Singleton() {}
+
+    // Singleton instance is created when the class is loaded by the class loader
+    private static class SingletonHelper {
+        private static final Singleton INSTANCE = new Singleton();
+    }
+
+    public static Singleton getInstance() {
+        return SingletonHelper.INSTANCE;
+    }
+}
+```
+</details>
+</details>
