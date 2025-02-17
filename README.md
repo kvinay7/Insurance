@@ -119,8 +119,6 @@ Software development is the process of designing, building, and maintaining soft
 
 # Design Patterns
 
-Here’s a refactored version of your content to improve clarity, consistency, and readability:
-
 <details>
   <summary>1. Singleton Design Pattern</summary>
 
@@ -223,4 +221,3 @@ public class Singleton {
 }
 ```
 </details>
----
