@@ -47,13 +47,11 @@ Software development is the process of designing, building, and maintaining soft
     - Users receive notifications for important updates (policy renewals, claim status).
 </details>
 
-## [System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
-
 <details>
   <summary><h2>Designing Class Diagram</h2></summary>
 
 ### 1. **Understand the Purpose of the Application**
-   - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows.
+   - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows ([System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)).
 
 ### 2. **Identify Key Classes**
    - Identify the main objects or entities that need to be represented in the system. These might include real-world objects or concepts that the software needs to model.
