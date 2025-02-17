@@ -120,6 +120,7 @@ Software development is the process of designing, building, and maintaining soft
 # Design Patterns
 
 ## Singleton design pattern
+The Singleton Design Pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. This pattern is typically used when you need exactly one object to coordinate actions across the system, such as in database connections, logging, or configuration management.
 
 ### 1. **Eager Initialization** (Thread-safe but not lazy-loaded)
 This method creates the singleton instance as soon as the class is loaded and thread-safe.
