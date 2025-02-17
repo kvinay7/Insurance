@@ -112,10 +112,10 @@ Software development is the process of designing, building, and maintaining soft
       - **Dependency Inversion**: Makes systems more flexible and maintainable.
       - **Normalization (DRY Principle)**: Ensures data consistency and reduces redundancy.
       - **MVC (Model-View-Controller)**: Separates business logic from UI and user input.
----
 
 ## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
 ## [Spring Framework](https://github.com/kvinay7/interview-preparation/blob/main/Spring.md)
+---
 
 # Design Patterns
 
