@@ -46,7 +46,6 @@ Software development is the process of designing, building, and maintaining soft
 14. **Notifications**
     - Users receive notifications for important updates (policy renewals, claim status).
 </details>
-
 <details>
   <summary><h2>Designing Class Diagram</h2></summary>
 
@@ -120,7 +119,6 @@ Software development is the process of designing, building, and maintaining soft
 </details>
 
 # Design Patterns
-
 <details>
   <summary><h2>1. Singleton Design Pattern</h2></summary>
    It is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. This pattern is typically used when exactly one object is needed to coordinate actions across the system, such as in database connections, logging, or configuration management.
