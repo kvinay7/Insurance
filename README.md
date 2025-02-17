@@ -121,7 +121,6 @@ Software development is the process of designing, building, and maintaining soft
 
 Here’s a refactored version of your content to improve clarity, consistency, and readability:
 
-```markdown
 <details>
   <summary>1. Singleton Design Pattern</summary>
 
@@ -223,7 +222,5 @@ public class Singleton {
     }
 }
 ```
-
 </details>
-```
 ---
