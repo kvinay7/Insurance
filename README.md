@@ -117,7 +117,9 @@ Software development is the process of designing, building, and maintaining soft
 ## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
 ## [Spring Framework](https://github.com/kvinay7/interview-preparation/blob/main/Spring.md)
 
-## Design Patterns:
+# Design Patterns
+
+## Singleton design pattern
 
 ### 1. **Eager Initialization** (Thread-safe but not lazy-loaded)
 This method creates the singleton instance as soon as the class is loaded and thread-safe.
