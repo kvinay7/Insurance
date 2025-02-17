@@ -49,7 +49,8 @@ Software development is the process of designing, building, and maintaining soft
 
 ## [System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)
 
-## [Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)
+<details>
+  <summary><h2>[Designing Class Diagram](https://github.com/ashishps1/awesome-low-level-design?tab=readme-ov-file)</h2></summary>
 
 ### 1. **Understand the Purpose of the Application**
    - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows.
@@ -115,10 +116,10 @@ Software development is the process of designing, building, and maintaining soft
       - **Dependency Inversion**: Makes systems more flexible and maintainable.
       - **Normalization (DRY Principle)**: Ensures data consistency and reduces redundancy.
       - **MVC (Model-View-Controller)**: Separates business logic from UI and user input.
+</details>
 
 ## [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
 ## [Spring Framework](https://github.com/kvinay7/interview-preparation/blob/main/Spring.md)
----
 
 # Design Patterns
 
