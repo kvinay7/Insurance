@@ -218,8 +218,10 @@ public class Singleton {
     }
 }
 ```
+</details>
 <details>
-  <summary><h3>Logging System</h3></summary>
+  <summary><h2>Logging System</h2></summary>
+  
 ### 1. **Singleton Pattern**
    - **Purpose**: Ensure that only one instance of the logger class exists throughout the application's lifecycle.
    - **Usage**: A singleton logger guarantees that all log messages are routed through the same instance, preventing redundant log file creation or inconsistent logging behavior.
@@ -464,6 +466,5 @@ public class Singleton {
    String logMessage = builder.addTimestamp().addLevel("INFO").addMessage("System started").build();
    System.out.println(logMessage);
    ```
-</details>
 </details>
 </details>
