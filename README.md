@@ -218,5 +218,252 @@ public class Singleton {
     }
 }
 ```
+<details>
+  <summary><h3>Logging System</h3></summary>
+### 1. **Singleton Pattern**
+   - **Purpose**: Ensure that only one instance of the logger class exists throughout the application's lifecycle.
+   - **Usage**: A singleton logger guarantees that all log messages are routed through the same instance, preventing redundant log file creation or inconsistent logging behavior.
+   
+   **Example**:
+   ```java
+   public class Logger {
+       private static Logger instance;
+
+       private Logger() { }
+
+       public static Logger getInstance() {
+           if (instance == null) {
+               synchronized (Logger.class) {
+                   if (instance == null) {
+                       instance = new Logger();
+                   }
+               }
+           }
+           return instance;
+       }
+
+       public void log(String message) {
+           // Logic to write the log
+       }
+   }
+   ```
+
+### 2. **Factory Method Pattern**
+   - **Purpose**: Provide a way to create different types of loggers or log handlers (e.g., console loggers, file loggers, etc.) without tightly coupling the creation logic to the application code.
+   - **Usage**: The factory pattern can be used to generate different loggers based on configuration or input parameters.
+
+   **Example**:
+   ```java
+   public interface Logger {
+       void log(String message);
+   }
+
+   public class FileLogger implements Logger {
+       public void log(String message) {
+           // Log to a file
+       }
+   }
+
+   public class ConsoleLogger implements Logger {
+       public void log(String message) {
+           // Log to the console
+       }
+   }
+
+   public class LoggerFactory {
+       public static Logger getLogger(String type) {
+           if (type.equals("FILE")) {
+               return new FileLogger();
+           } else if (type.equals("CONSOLE")) {
+               return new ConsoleLogger();
+           } else {
+               throw new IllegalArgumentException("Unknown logger type");
+           }
+       }
+   }
+   ```
+
+### 3. **Strategy Pattern**
+   - **Purpose**: Allow interchangeable strategies for different log output methods (e.g., logging to console, file, database, etc.) at runtime.
+   - **Usage**: The strategy pattern enables the selection of different logging strategies without modifying the core logging system.
+
+   **Example**:
+   ```java
+   public interface LogStrategy {
+       void log(String message);
+   }
+
+   public class FileLogStrategy implements LogStrategy {
+       public void log(String message) {
+           // Write log to a file
+       }
+   }
+
+   public class ConsoleLogStrategy implements LogStrategy {
+       public void log(String message) {
+           // Output log to console
+       }
+   }
+
+   public class Logger {
+       private LogStrategy strategy;
+
+       public Logger(LogStrategy strategy) {
+           this.strategy = strategy;
+       }
+
+       public void log(String message) {
+           strategy.log(message);
+       }
+
+       public void setStrategy(LogStrategy strategy) {
+           this.strategy = strategy;
+       }
+   }
+   ```
+
+### 4. **Observer Pattern**
+   - **Purpose**: Enable different components of the application to subscribe and receive log messages without tightly coupling them to the logging system.
+   - **Usage**: The observer pattern allows the logger to notify registered observers (like monitoring systems or external logging services) about new log events.
+
+   **Example**:
+   ```java
+   public interface LogObserver {
+       void update(String logMessage);
+   }
+
+   public class EmailLogObserver implements LogObserver {
+       public void update(String logMessage) {
+           // Send log via email
+       }
+   }
+
+   public class Logger {
+       private List<LogObserver> observers = new ArrayList<>();
+
+       public void addObserver(LogObserver observer) {
+           observers.add(observer);
+       }
+
+       public void removeObserver(LogObserver observer) {
+           observers.remove(observer);
+       }
+
+       public void log(String message) {
+           for (LogObserver observer : observers) {
+               observer.update(message);
+           }
+       }
+   }
+   ```
+
+### 5. **Decorator Pattern**
+   - **Purpose**: Dynamically add functionalities to the logger at runtime, such as adding timestamping, log level filtering, or log formatting.
+   - **Usage**: This pattern allows you to extend the logger's behavior by wrapping it with additional layers of functionality.
+
+   **Example**:
+   ```java
+   public interface Logger {
+       void log(String message);
+   }
+
+   public class BasicLogger implements Logger {
+       public void log(String message) {
+           System.out.println(message);
+       }
+   }
+
+   public class TimestampLogger implements Logger {
+       private Logger wrappedLogger;
+
+       public TimestampLogger(Logger logger) {
+           this.wrappedLogger = logger;
+       }
+
+       public void log(String message) {
+           String timestamp = "[" + LocalDateTime.now() + "]";
+           wrappedLogger.log(timestamp + " " + message);
+       }
+   }
+   ```
+
+### 6. **Chain of Responsibility Pattern**
+   - **Purpose**: Allow different loggers or filters to handle different log levels (e.g., INFO, WARN, ERROR), and pass the log message through a chain of handlers until one handles it.
+   - **Usage**: This pattern is useful when you have multiple logging levels or when logs need to be filtered or handled differently based on severity.
+
+   **Example**:
+   ```java
+   public abstract class LogHandler {
+       protected LogHandler nextHandler;
+
+       public void setNextHandler(LogHandler nextHandler) {
+           this.nextHandler = nextHandler;
+       }
+
+       public abstract void handleLog(String message, String level);
+   }
+
+   public class InfoLogHandler extends LogHandler {
+       public void handleLog(String message, String level) {
+           if ("INFO".equals(level)) {
+               System.out.println("INFO: " + message);
+           } else if (nextHandler != null) {
+               nextHandler.handleLog(message, level);
+           }
+       }
+   }
+
+   public class ErrorLogHandler extends LogHandler {
+       public void handleLog(String message, String level) {
+           if ("ERROR".equals(level)) {
+               System.err.println("ERROR: " + message);
+           } else if (nextHandler != null) {
+               nextHandler.handleLog(message, level);
+           }
+       }
+   }
+
+   // Usage
+   LogHandler infoHandler = new InfoLogHandler();
+   LogHandler errorHandler = new ErrorLogHandler();
+   infoHandler.setNextHandler(errorHandler);
+   infoHandler.handleLog("This is an error message", "ERROR");
+   ```
+
+### 7. **Builder Pattern**
+   - **Purpose**: Simplify the construction of complex log messages, especially when the messages involve multiple pieces of data or require formatting.
+   - **Usage**: A builder pattern can help construct log entries in a clean and structured way.
+
+   **Example**:
+   ```java
+   public class LogMessageBuilder {
+       private StringBuilder message = new StringBuilder();
+
+       public LogMessageBuilder addTimestamp() {
+           message.append("[").append(LocalDateTime.now()).append("] ");
+           return this;
+       }
+
+       public LogMessageBuilder addLevel(String level) {
+           message.append("[").append(level).append("] ");
+           return this;
+       }
+
+       public LogMessageBuilder addMessage(String msg) {
+           message.append(msg);
+           return this;
+       }
+
+       public String build() {
+           return message.toString();
+       }
+   }
+   
+   // Usage
+   LogMessageBuilder builder = new LogMessageBuilder();
+   String logMessage = builder.addTimestamp().addLevel("INFO").addMessage("System started").build();
+   System.out.println(logMessage);
+   ```
+</details>
 </details>
 </details>
