@@ -1,4 +1,4 @@
-# Software Design and Development in Java
+# Software Design and Development
 Software development is the process of designing, building, and maintaining software applications for various platforms such as web, mobile, desktop, and embedded systems. It encompasses a wide range of tasks including planning, requirement gathering, architecture design, coding, testing, deployment, and maintenance.
 
 <details>
