@@ -1,5 +1,4 @@
-# Software Design and Development
-Software development is the process of designing, building, and maintaining software applications for various platforms such as web, mobile, desktop, and embedded systems. It encompasses a wide range of tasks including planning, requirement gathering, architecture design, coding, testing, deployment, and maintenance.
+# Insurance Application
 
 ### 1. **Understand the Purpose of the Application**
    - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows ([System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)).
