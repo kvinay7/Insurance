@@ -72,28 +72,14 @@
       - Payment class - `makePayment()`, `viewPaymentHistory()`.
       - Claim class - `submitClaim()`, `trackClaimStatus()`, `viewClaimHistory()`.
 
-### 5. **Define Relationships Between Classes**
-   - Identify how the classes interact with each other. This includes:
-     - **Associations**: Classes are related to one another in some way.
-     - **Generalization**: One class inherits properties and behaviors from another.
-     - **Specialization**: is a form of generalization, which means that a subclass is a more specific version of the superclass.
-     - **Realization**: one class implements the behavior of the other class or interface.
-     - **Aggregation/Composition**: One class is made up of other classes.
-     - **Dependency**: One class depends on another for its functionality.
-  
+### 5. **[Define Relationships Between Classes](https://blog.algomaster.io/p/uml-class-diagram-explained-with-examples)**
    - Example:
       - A User can have many Policies, Applications, Payments and Claims.
       - Policies generate Applications, require Payments, and cover Claims.
       - Payments relate to both Users and Policies.
       - Claim is related to both User and Policy.
       - Notifications are sent to Users. 
-   
-### 6. **Draw the Class Diagram**
-   - Now, start creating the actual diagram using UML (Unified Modeling Language) notation:
-     - **Class boxes**: Represent each class with a rectangle divided into three sections (name, attributes, and methods).
-     - **Lines for relationships**: Draw lines to represent associations, inheritance, and other relationships.
-     - **Arrows for directionality**: Use arrows to indicate the direction of associations or dependencies.
-     - **Multiplicity**: Indicate the number of instances related (e.g., one-to-many, many-to-many) next to association lines.
-   - [Example](https://uml.planttext.com/plantuml/png/XLNBRjim4BmRy3yGFlM11CrLXo9kZ28vr0sGzWDeQMqJuKCXAHj2qNylkQGiKgRIcpWSxSxiaijxOwcsdU3BnN9HSseC-Mr0ap_B1I6VE_VvjAa8anRNaWgeYB6QoGC282ZZ6TAw46UbcnmyAWdRJkn0PpXj6Wt6P5X3BVpSVsFQ7YlY5uXgE31ZGN_uY4kk3ayoVdUjPprhjMSS8gQX1dQ2hR9ipsfgcKBstz7bi-AixgFF5XUfqu1iftuRCBLchO-NuRKwWQO7M0lLILkHFLSq1j8WM2SA6vZXLz_c6R0V6sSeCG-ocI0d1kSDM5Ty4ntJjkNzTwM3hqiP99mpfAQo1Zv2IKNMBaAiLImB7P6qDWby9J_PcqXETbuijLtUTTFj1BE9XAZNQbg_hgU_Jdj9Um7I3iqCgwoR0Ieq8MnCf4Rq1zYZcXpai5Cm8EWhH1rHkkzHH1xTsLLwMl1yCrSVmOA9ijPPQrCJIVu7Jfc8QMl_dMP3O98BiUjC21TA4aA4KrfeDgPFs_mmnabAY6YvWEdrZZva0cMJAy6l3grmCyXTtginz0BUQB2FQN4qhkvMvERcArbzkRtzj1e6IKMEr9GPwSLoET3y37KuoHNnvsc65FhsdqXPRIeI1wBnBgBYTrKUtEJGphYPeuzADRnrJCyp1xau8r50ckf2lajAkLTwdeLk1_SM6hBhqLKKLA0AsW2oIfmywOKptCgCcdZclZZ4AlzBS5WC6eWD4gzfKPz_k0ORMTzAjhs0aFRUlGluSly3)
 
-### 7. **[Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)**
+   - [Design](https://uml.planttext.com/plantuml/png/XLNBRjim4BmRy3yGFlM11CrLXo9kZ28vr0sGzWDeQMqJuKCXAHj2qNylkQGiKgRIcpWSxSxiaijxOwcsdU3BnN9HSseC-Mr0ap_B1I6VE_VvjAa8anRNaWgeYB6QoGC282ZZ6TAw46UbcnmyAWdRJkn0PpXj6Wt6P5X3BVpSVsFQ7YlY5uXgE31ZGN_uY4kk3ayoVdUjPprhjMSS8gQX1dQ2hR9ipsfgcKBstz7bi-AixgFF5XUfqu1iftuRCBLchO-NuRKwWQO7M0lLILkHFLSq1j8WM2SA6vZXLz_c6R0V6sSeCG-ocI0d1kSDM5Ty4ntJjkNzTwM3hqiP99mpfAQo1Zv2IKNMBaAiLImB7P6qDWby9J_PcqXETbuijLtUTTFj1BE9XAZNQbg_hgU_Jdj9Um7I3iqCgwoR0Ieq8MnCf4Rq1zYZcXpai5Cm8EWhH1rHkkzHH1xTsLLwMl1yCrSVmOA9ijPPQrCJIVu7Jfc8QMl_dMP3O98BiUjC21TA4aA4KrfeDgPFs_mmnabAY6YvWEdrZZva0cMJAy6l3grmCyXTtginz0BUQB2FQN4qhkvMvERcArbzkRtzj1e6IKMEr9GPwSLoET3y37KuoHNnvsc65FhsdqXPRIeI1wBnBgBYTrKUtEJGphYPeuzADRnrJCyp1xau8r50ckf2lajAkLTwdeLk1_SM6hBhqLKKLA0AsW2oIfmywOKptCgCcdZclZZ4AlzBS5WC6eWD4gzfKPz_k0ORMTzAjhs0aFRUlGluSly3)
+   
+   - [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
