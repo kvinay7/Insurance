@@ -2,9 +2,10 @@
 
 ### 1. **Understand the Purpose of the Application**
    - Determine what you need the diagram to represent. Are you modeling a specific part of a system, or the entire system? Clarify the scope of the design. Analyze user needs and system constraints. Understand expected system interactions and workflows ([System Modelling](https://github.com/kvinay7/Insurance/blob/main/Use%20Case%20Diagram.pdf)).
+
 <details>
-  <summary><h4>Functional Requirements of Insurance Application</h4></summary>
-   
+   <summary><h4>Functional Requirements of Insurance Application</h4></summary>
+
 1. **User Registration**
    - Users can create an account by providing personal information.
    
@@ -80,6 +81,4 @@
       - Claim is related to both User and Policy.
       - Notifications are sent to Users. 
 
-   - [Design](https://uml.planttext.com/plantuml/png/XLNBRjim4BmRy3yGFlM11CrLXo9kZ28vr0sGzWDeQMqJuKCXAHj2qNylkQGiKgRIcpWSxSxiaijxOwcsdU3BnN9HSseC-Mr0ap_B1I6VE_VvjAa8anRNaWgeYB6QoGC282ZZ6TAw46UbcnmyAWdRJkn0PpXj6Wt6P5X3BVpSVsFQ7YlY5uXgE31ZGN_uY4kk3ayoVdUjPprhjMSS8gQX1dQ2hR9ipsfgcKBstz7bi-AixgFF5XUfqu1iftuRCBLchO-NuRKwWQO7M0lLILkHFLSq1j8WM2SA6vZXLz_c6R0V6sSeCG-ocI0d1kSDM5Ty4ntJjkNzTwM3hqiP99mpfAQo1Zv2IKNMBaAiLImB7P6qDWby9J_PcqXETbuijLtUTTFj1BE9XAZNQbg_hgU_Jdj9Um7I3iqCgwoR0Ieq8MnCf4Rq1zYZcXpai5Cm8EWhH1rHkkzHH1xTsLLwMl1yCrSVmOA9ijPPQrCJIVu7Jfc8QMl_dMP3O98BiUjC21TA4aA4KrfeDgPFs_mmnabAY6YvWEdrZZva0cMJAy6l3grmCyXTtginz0BUQB2FQN4qhkvMvERcArbzkRtzj1e6IKMEr9GPwSLoET3y37KuoHNnvsc65FhsdqXPRIeI1wBnBgBYTrKUtEJGphYPeuzADRnrJCyp1xau8r50ckf2lajAkLTwdeLk1_SM6hBhqLKKLA0AsW2oIfmywOKptCgCcdZclZZ4AlzBS5WC6eWD4gzfKPz_k0ORMTzAjhs0aFRUlGluSly3)
-   
-   - [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
+   - [Design](https://uml.planttext.com/plantuml/png/XLNBRjim4BmRy3yGFlM11CrLXo9kZ28vr0sGzWDeQMqJuKCXAHj2qNylkQGiKgRIcpWSxSxiaijxOwcsdU3BnN9HSseC-Mr0ap_B1I6VE_VvjAa8anRNaWgeYB6QoGC282ZZ6TAw46UbcnmyAWdRJkn0PpXj6Wt6P5X3BVpSVsFQ7YlY5uXgE31ZGN_uY4kk3ayoVdUjPprhjMSS8gQX1dQ2hR9ipsfgcKBstz7bi-AixgFF5XUfqu1iftuRCBLchO-NuRKwWQO7M0lLILkHFLSq1j8WM2SA6vZXLz_c6R0V6sSeCG-ocI0d1kSDM5Ty4ntJjkNzTwM3hqiP99mpfAQo1Zv2IKNMBaAiLImB7P6qDWby9J_PcqXETbuijLtUTTFj1BE9XAZNQbg_hgU_Jdj9Um7I3iqCgwoR0Ieq8MnCf4Rq1zYZcXpai5Cm8EWhH1rHkkzHH1xTsLLwMl1yCrSVmOA9ijPPQrCJIVu7Jfc8QMl_dMP3O98BiUjC21TA4aA4KrfeDgPFs_mmnabAY6YvWEdrZZva0cMJAy6l3grmCyXTtginz0BUQB2FQN4qhkvMvERcArbzkRtzj1e6IKMEr9GPwSLoET3y37KuoHNnvsc65FhsdqXPRIeI1wBnBgBYTrKUtEJGphYPeuzADRnrJCyp1xau8r50ckf2lajAkLTwdeLk1_SM6hBhqLKKLA0AsW2oIfmywOKptCgCcdZclZZ4AlzBS5WC6eWD4gzfKPz_k0ORMTzAjhs0aFRUlGluSly3) and [Implementation](https://github.com/kvinay7/Insurance/blob/main/InsuranceApplication.java)
